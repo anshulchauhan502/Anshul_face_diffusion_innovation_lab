@@ -1,10 +1,12 @@
 HOW TO RUN
-Install dependent packages from requirements.txt
-1. Run the download_images.py on your pc, it will save the images in faces folder in desktop. (set datset image count on it- default 50000).
+
+Install dependent packages - pip install -r requirements.txt
+1. Run the download_images.py on your pc, it will save the images in faces folder in desktop. (set dataset image count on it- default 50000).
 2. Create a fake_face director on same directory as scritc.py . fake_faces will contain "faces" folder (in which whole dataset images are).
-3. Now to run main scriptc.py , first set the dataroot path to fake_faces folder.then run it.
+3. Now to run main scriptc.py , first set the dataroot path to fake_faces folder. then run it.(path e.g. '/content/fake_face')
 
-
+   after running main file it would create a result folder and a model_checkpoint.pth .
+   As there is no model checkpoint for starting, it will be created automatically on first running.
 
 
 
@@ -64,4 +66,19 @@ Loss Function:
 
 
 
-![epoch_0_step_1](https://github.com/user-attachments/assets/cf676ded-8a2a-4845-9659-8b97c42edeb2)
+![epoch_1_step_0](https://github.com/user-attachments/assets/8cbab556-0117-49f2-8b78-7b2af105b75c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
