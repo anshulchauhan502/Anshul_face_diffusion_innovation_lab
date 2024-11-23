@@ -5,13 +5,25 @@ Install dependent packages - pip install -r requirements.txt
 2. Create a fake_face director on same directory as scritc.py . fake_faces will contain "faces" folder (in which whole dataset images are).
 3. Now to run main scriptc.py , first set the dataroot path to fake_faces folder. then run it.(path e.g. '/content/fake_face')
 
-   after running main file it would create a result folder and a model_checkpoint.pth .
-   As there is no model checkpoint for starting, it will be created automatically on first running.
+After running main file it would create a result folder and a model_checkpoint.pth .
+As there is no model checkpoint for starting, it will be created automatically on first running.
+
+
+project-directory/
+
+├── scriptc.py                 # Main Python script
+
+├── fake_faces/                # Directory for fake face images
+                                                                 
+│     └── faces/                 # Subdirectory containing the images
+
+├── requirement.txt            # List of dependencies for the project
+
 
 
 
 DATASET
-Dataset are all fake face images downloaded from https://thispersondoesnotexist.com/ .
+ are all fake face images downloaded from https://thispersondoesnotexist.com/ .
 
 The code implements a denoising diffusion model using a simplified U-Net architecture. The goal is to train the model to reverse the process of adding noise to images (a process called diffusion), ultimately generating new, clean images.
 
